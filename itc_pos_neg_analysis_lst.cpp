@@ -18,7 +18,10 @@ int count_neg(vector <int> list1){
 }
 void itc_pos_neg_analysis_lst(const vector <int> &lst)
 {
-    cout <<"Ïîëîæèòåëüíûå:" <<count_pos(lst) <<"Îòðèöàòåëüíûå:" <<count_neg(lst) <<endl;
-    cout <<"Êîëè÷åñòâî ÷èñåë: " <<count_pos(lst) <<"Êîëè÷åñòâî ÷èñåë: " <<count_neg(lst) <<endl;
-    cout <<"Ìàêñèìàëüíàÿ öèôðà: " <<count_pos(lst) <<"Ìàêñèìàëüíàÿ öèôðà: " <<count_neg(lst) <<endl;
+    cout <<"ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ†Ð¸Ñ„Ñ€: " <<count_pos(lst1) <<"ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ†Ð¸Ñ„Ñ€: " <<count_neg(lst2) <<endl;
+    cout <<"ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð°Ñ Ñ†Ð¸Ñ„Ñ€Ð°: " <<max_num(lst1) <<"ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð°Ñ Ñ†Ð¸Ñ„Ñ€Ð°: " <<max_num(lst2) <<endl;
+    cout <<"ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð°Ñ Ñ†Ð¸Ñ„Ñ€Ð°: " <<min_num(lst1) <<"ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð°Ñ Ñ†Ð¸Ñ„Ñ€Ð°: " <<min_num(lst2) <<endl;
+    cout <<"Ð¡ÑƒÐ¼Ð¼Ð° Ñ‡Ð¸ÑÐµÐ»: " <<sum(lst1) <<"Ð¡ÑƒÐ¼Ð¼Ð° Ñ‡Ð¸ÑÐµÐ»: " <<sum(lst2) <<endl;
+    cout <<"Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ: " <<middle(lst1) <<"Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ: " <<middle(lst2) <<endl;
+    cout <<"ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð½ÑƒÐ»ÐµÐ¹: " <<zero_count(lst1);
 }
