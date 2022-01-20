@@ -17,7 +17,10 @@ int max_num(vector <int> list1){
     return max;
 }
 int middle(vector <int> list1){
-    return sum(list1) / list1.size();
+    if (list1.size() != 0)
+        return sum(list1) / list1.size();
+    else
+        return 0;
 }
 int min_num(vector <int> list1){
     int min = 1000000;
@@ -54,20 +57,16 @@ void itc_pos_neg_analysis_lst(const vector <int> &lst)
 {
     if (lst.size() > 0){
         setlocale(LC_ALL,"Russian");
-        vector <int> lst1(count_pos(lst));
-        vector <int> lst2(count_neg(lst));
-        int len = 0;
+        vector <int> lst1;
+        vector <int> lst2;
         for (int i = 0; i < lst.size(); i++){
             if (lst[i] >= 0){
-                lst1[len] = lst[i];
-                len++;
+                lst1.push_back(lst[i]);
             }
         }
-        len = 0;
         for (int i = 0; i < lst.size(); i++){
             if (lst[i] < 0){
-                lst2[len] = lst[i];
-                len++;
+                lst2.push_back(lst[i]);
             }
         }
         cout <<"Count of numbers: " <<count_pos(lst) << "," << '\t' << '\t' <<" Count of numbers: " <<count_neg(lst) <<endl;
