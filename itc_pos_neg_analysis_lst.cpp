@@ -68,6 +68,7 @@ void itc_pos_neg_analysis_lst(const vector <int> &lst)
             len++;
         }
     }
+    setlocale(LC_ALL,"Russian");
     cout <<"Количество цифр: " <<count_pos(lst) <<"Количество цифр: " <<count_neg(lst) <<endl;
     cout <<"Максимальная цифра: " <<max_num(lst1) <<"Максимальная цифра: " <<max_num(lst2) <<endl;
     cout <<"Минимальная цифра: " <<min_num(lst1) <<"Минимальная цифра: " <<min_num(lst2) <<endl;

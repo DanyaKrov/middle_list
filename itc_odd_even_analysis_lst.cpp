@@ -1,6 +1,7 @@
 #include "middle_list.h"
 
 void itc_odd_even_analysis_lst(const vector <int> &lst){
+    setlocale(LC_ALL, "Russian");
     vector <int> lst1;
     vector <int> lst2;
     int len = 0;
