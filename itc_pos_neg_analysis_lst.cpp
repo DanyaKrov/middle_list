@@ -9,7 +9,7 @@ int count_pos(vector <int> list1){
     return count;
 }
 int max_num(vector <int> list1){
-    int max = -100000000;
+    int max = -1000000;
     for (int i = 0; i < list1.size(); i++){
         if (list1[i] > max)
             max = list1[i];
@@ -20,7 +20,7 @@ int middle(vector <int> list1){
     return sum(list1) / list1.size();
 }
 int min_num(vector <int> list1){
-    int min = 10000000000;
+    int min = 1000000;
     for (int i = 0; i < list1.size(); i++){
         if (list1[i] < min)
             min = list1[i];
