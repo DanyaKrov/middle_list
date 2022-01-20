@@ -52,27 +52,29 @@ long sum(vector <int> list1){
 }
 void itc_pos_neg_analysis_lst(const vector <int> &lst)
 {
-    setlocale(LC_ALL,"Russian");
-    vector <int> lst1(count_pos(lst));
-    vector <int> lst2(count_neg(lst));
-    int len = 0;
-    for (int i = 0; i < lst.size(); i++){
-        if (lst[i] < 0){
-            lst2[len] = lst[i];
-            len++;
+    if (lst.size() > 0){
+        setlocale(LC_ALL,"Russian");
+        vector <int> lst1(count_pos(lst));
+        vector <int> lst2(count_neg(lst));
+        int len = 0;
+        for (int i = 0; i < lst.size(); i++){
+            if (lst[i] < 0){
+                lst2[len] = lst[i];
+                len++;
+            }
         }
-    }
-    len = 0;
-    for (int i = 0; i < lst.size(); i++){
-        if (lst[i] >= 0){
-            lst1[len] = lst[i];
-            len++;
+        len = 0;
+        for (int i = 0; i < lst.size(); i++){
+            if (lst[i] >= 0){
+                lst1[len] = lst[i];
+                len++;
+            }
         }
+        cout <<"Count of numbers: " <<count_pos(lst) <<" Count of numbers: " <<count_neg(lst) <<endl;
+        cout <<"Max: " <<max_num(lst1) <<" Max: " <<max_num(lst2) <<endl;
+        cout <<"Min: " <<min_num(lst1) <<" Min: " <<min_num(lst2) <<endl;
+        cout <<"Sum: " <<sum(lst1) <<" Sum: " <<sum(lst2) <<endl;
+        cout <<"Mid: " <<middle(lst1) <<" Mid: " <<middle(lst2) <<endl;
+        cout <<"Zeros: " <<zero_count(lst1);
     }
-    cout <<"Count of numbers: " <<count_pos(lst) <<" Count of numbers: " <<count_neg(lst) <<endl;
-    cout <<"Max: " <<max_num(lst1) <<" Max: " <<max_num(lst2) <<endl;
-    cout <<"Min: " <<min_num(lst1) <<" Min: " <<min_num(lst2) <<endl;
-    cout <<"Sum: " <<sum(lst1) <<" Sum: " <<sum(lst2) <<endl;
-    cout <<"Mid: " <<middle(lst1) <<" Mid: " <<middle(lst2) <<endl;
-    cout <<"Zeros: " <<zero_count(lst1);
 }
