@@ -40,8 +40,7 @@ string itc_join(vector <char> lst, string sep){
     return ans;
 }
 vector <char> itc_strtlist(string str){
-    vector <char> ans;
-
+    vector <char> ans(itc_len(str));
     for (int i = 0; i < itc_len(str); i++){
         ans[i] = str[i];
     }
