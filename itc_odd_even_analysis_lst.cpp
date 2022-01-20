@@ -18,9 +18,9 @@ void itc_odd_even_analysis_lst(const vector <int> &lst){
             len++;
         }
     }
-    cout <<"Анализ списка:" <<endl;
-    cout <<"Количество четных чисел: " <<lst1.size() <<", " <<"Количество нечетных чисел: " <<lst2.size() <<", " <<endl;
-    cout <<"Максимальная четная цифра: " <<max_num(lst1) <<", " <<"Максимальная нечетная цифра: " <<max_num(lst2) <<", " <<endl;
-    cout <<"Минимальная четная цифра: " <<min_num(lst1) <<", " <<"Минимальная нечетная цифра: " <<min_num(lst2) <<", " <<endl;
-    cout <<"Сумма четных чисел: " <<sum(lst1) <<", " <<"Сумма нечетных чисел: " <<sum(lst2) <<", " <<endl;
+    cout <<"Analise:" <<endl;
+    cout <<"Count 1: " <<lst1.size() <<", " <<"Count 2: " <<lst2.size() <<", " <<endl;
+    cout <<"Max: " <<max_num(lst1) <<", " <<"Max: " <<max_num(lst2) <<", " <<endl;
+    cout <<"Min: " <<min_num(lst1) <<", " <<"Min: " <<min_num(lst2) <<", " <<endl;
+    cout <<"Count: " <<sum(lst1) <<", " <<"Count: " <<sum(lst2) <<", " <<endl;
 }
